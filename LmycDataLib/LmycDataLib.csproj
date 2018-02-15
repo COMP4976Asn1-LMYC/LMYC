@@ -95,14 +95,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountViewModels.cs" />
+    <Compile Include="Boat.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="ManageViewModels.cs" />
+    <Compile Include="Migrations\Boats\201802151848161_InitialCreate.cs" />
+    <Compile Include="Migrations\Boats\201802151848161_InitialCreate.Designer.cs">
+      <DependentUpon>201802151848161_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Boats\201802152100130_Update.cs" />
+    <Compile Include="Migrations\Boats\201802152100130_Update.Designer.cs">
+      <DependentUpon>201802152100130_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Boats\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\Boats\201802151848161_InitialCreate.resx">
+      <DependentUpon>201802151848161_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Boats\201802152100130_Update.resx">
+      <DependentUpon>201802152100130_Update.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
